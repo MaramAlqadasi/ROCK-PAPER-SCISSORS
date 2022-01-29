@@ -24,6 +24,7 @@ function playRound(playerSelection, computerSelection) {
          
             return "You win " +playerSelection +" beats "+ computerSelection;
         }
+    
         
 
     }
@@ -63,4 +64,5 @@ function playRound(playerSelection, computerSelection) {
       }
 
   }
+  Game();
 
