@@ -8,7 +8,6 @@ function playRound(playerSelection, computerSelection) {
     // your code here!
     
     if(playerSelection==computerSelection){
-        //console.log("Computer's Scores : " + computerScores + "  Player's Scors : " + playerScores );
         return("It's a Tie " +playerSelection+" tie with "+computerSelection)
     }
     else if (
@@ -16,15 +15,13 @@ function playRound(playerSelection, computerSelection) {
         (playerSelection === "Paper" && computerSelection==="Scissors")|| 
         (playerSelection === "Scissors" && computerSelection==="Rock")){
            
-           // console.log("Computer's Scores : " + computerScores + "  Player's Scors : " + playerScores );
             return "Computer win " +computerSelection +" beats "+ playerSelection;
     }
     else if (
         (playerSelection === "Rock" && computerSelection==="Scissors")||
         (playerSelection === "Paper" && computerSelection==="Rock")||
         (playerSelection === "Scissors" && computerSelection==="Paper")){
-           // playerScores +=1;
-            //console.log("Computer's Scores : " + computerScores + "  Player's Scors : " + playerScores );
+         
             return "You win " +playerSelection +" beats "+ computerSelection;
         }
         
@@ -67,7 +64,3 @@ function playRound(playerSelection, computerSelection) {
 
   }
 
-  
-//   const playerSelection = readPlayerSelection();
-//   const computerSelection = computerPlay();
-//   console.log(playRound(playerSelection, computerSelection));
