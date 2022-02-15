@@ -69,19 +69,19 @@ h1{
     cursor: pointer;
 }
 .rock{
-    background-image: url(/rock.png);
+    background-image: url(img/rock.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
 }
 .paper{
-    background-image: url(/paper.png);
+    background-image: url(img/paper.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
 }
 .scissors{
-    background-image: url(/scissors.png);
+    background-image: url(img/scissors.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
