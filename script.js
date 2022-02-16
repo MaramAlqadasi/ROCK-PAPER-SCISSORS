@@ -10,7 +10,7 @@ function playAgain(){
     let body=document.querySelector('body');
     let rePlayButton=document.createElement('button');
     let optionContainer=document.querySelector('.optionContainer');
-    rePlayButton.style.cssText="padding:1rem;font-size:2rem;font-weight:bold;background-color:#c6d45c;border-radius:30px;cursor:pointer;color:white;";
+    rePlayButton.style.cssText="padding:0.5em;font-size:1.5rem;font-weight:bold;background-color:#c6d45c;border-radius:30px;cursor:pointer;color:white;margin-top:2rem";
     rePlayButton.textContent="Play Again";
     body.removeChild(optionContainer);
     body.appendChild(rePlayButton);
@@ -67,15 +67,15 @@ function playRound(playerSelection, computerSelection) {
               }, 1000);
     }
 
-  const computerSelection = computerPlay();
+  
   const rock = document.querySelector(".rock");
-  rock.addEventListener('click',() =>  { playRound("Rock",computerSelection);});
+  rock.addEventListener('click',() =>  { playRound("Rock",computerPlay());});
   
   const paper=document.querySelector('.paper');
-  paper.addEventListener('click',() =>  { playRound("Paper",computerSelection);});
+  paper.addEventListener('click',() =>  { playRound("Paper",computerPlay());});
 
   const scissors=document.querySelector('.scissors');
-  scissors.addEventListener('click',() =>  { playRound("Scissors",computerSelection);});
+  scissors.addEventListener('click',() =>  { playRound("Scissors",computerPlay());});
 
 //   Game();
 
